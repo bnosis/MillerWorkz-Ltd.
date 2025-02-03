@@ -1,0 +1,11 @@
+RewriteEngine On
+
+RewriteRule ^index\.html$ /home [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
+RewriteRule ^([^/.]+)\.html$ /$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/.]+)$ $1.html [L]
+
+RewriteRule ^home$ index.html [L]

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miller Workz Ltd. Contact Us</title>
+    <link rel="icon" href="local/logo_black_transparent_sideways.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap">
+</head>
+<body>
+    <nav class="nav_header">
+        <div id="header_left">
+            <a href="index.html">
+                <img src="local/logo_white_transparent.png" id="nav_logo" name="nav_logo" alt="nav logo">
+            </a>
+        </div>
+        <div id="header_right">
+            <a href="index.html"><div>Home</div></a>
+            <div class="dropdown">
+                <a href="services/services.html"><div>Services</div></a>
+                <span class="dropdown_toggle" id="services_toggle">&#9660;</span>
+                <div class="dropdown_content">
+                    <a href="services/bodywork.html">Bodywork</a>
+                    <a href="services/engine.html">Engine Repair/Maintenance</a>
+                    <a href="services/fabrication.html">Custom Fabrication</a>
+                </div>
+            </div>
+            <a href="gallery.html"><div>Gallery</div></a>
+            <a href="contact.html"><div id="active_nav">Contact Us</div></a>
+        </div>
+        <div class="hamburger_menu" id="hamburger_menu">&#9776;</div>
+    </nav>
+
+    <form action="contact_form.php" method="POST" enctype="multipart/form-data" class="contact_form">
+        <h1>Contact Form</h1>
+        <p>Fill out the form below to get in touch with us. 
+            Please provide your name, email, service type and message, 
+            and if you wish, you can upload images related 
+            to your inquiry. Once you submit the form, 
+            we will get back to you as soon as possible!</p>
+        <label for="name">Name: <span class="required">*</span></label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email: <span class="required">*</span></label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number: (Optional)</label>
+        <input type="tel" id="phone" name="phone" placeholder="(xxx) xxx-xxxx">
+        
+        <label for="service_type">Service Type: <span class="required">*</span></label>
+        <select id="service_type" name="service_type" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="Bodywork">Bodywork</option>
+            <option value="Engine Repair/Maintence">Engine Repair/Maintenance</option>
+            <option value="Custom Fabrication">Custom Fabrication</option>
+            <option value="Battery Boosting/Jumpstart Services">Battery Boosting/Jumpstart Services</option>
+            <option value="Tire Changes (On Rim)">Tire Changes (On Rim)</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="message">Message: <span class="required">*</span></label>
+        <textarea id="message" name="message" required></textarea>
+
+        <label for="photos">Upload Photos (9 Max):</label>
+        <input type="file" id="photos" name="photos[]" accept="image/*" multiple max="9">
+        <div id="file_names"></div>
+
+        <button type="submit" id="submit_button">Send Message</button>
+
+        <div id="loading_spinner" class="feedback_message" style="display: none;">
+            <img src="local/loading.gif" alt="loading animation" style="width:45px; height: auto;">
+        </div>
+    
+        <div id="feedback_message" class="feedback_message"></div>
+    </form>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>📍 Serving the GTA and Greater Hamilton, Ontario</p>
+        <p>📞 Call us at: <a href="tel:+1234567890">+1 (905) 870-9361</a></p>
+        <p>📧 Email: <a href="mailto:millerworkzltd@outlook.com">millerworkzltd@outlook.com</a></p>
+        <p>🕒 Hours:</p>
+        <ul style="list-style-type:none; padding: 0; margin: 0;">
+            <li>Monday - Friday: 9 a.m. – 7 p.m.</li>
+            <li>Saturday - Sunday: Closed</li>
+        </ul>
+        <div id="social_links_container"></div>
+    </section>
+
+
+    <footer class="footer">
+        <p>&copy; 2025 MillerWorkz Ltd. | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

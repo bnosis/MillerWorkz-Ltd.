@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MillerWorkz Ltd.</title>
+    <link rel="icon" href="local/logo_black_transparent_sideways.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap">
+</head>
+<body>
+    <nav class="nav_header">
+        <div id="header_left">
+            <a href="index.html">
+                <img src="local/logo_white_transparent.png" id="nav_logo" name="nav_logo" alt="nav logo">
+            </a>
+        </div>
+        <div id="header_right">
+            <a href="index.html"><div id="active_nav">Home</div></a>
+            <div class="dropdown">
+                <a href="services/services.html"><div>Services</div></a>
+                <span class="dropdown_toggle" id="services_toggle">&#9660;</span>
+                <div class="dropdown_content">
+                    <a href="services/bodywork.html">Bodywork</a>
+                    <a href="services/engine.html">Engine Repair/Maintenance</a>
+                    <a href="services/fabrication.html">Custom Fabrication</a>
+                </div>
+            </div>
+            <a href="gallery.html"><div>Gallery</div></a>
+            <a href="contact.html"><div>Contact Us</div></a>
+        </div>
+        <div class="hamburger_menu" id="hamburger_menu">&#9776;</div>
+    </nav>
+
+    <div class="top_index">
+        <section class="hero">
+            <h1>Welcome to <strong>MillerWorkz Ltd.</strong></h1>
+            <p>Your Trusted Mobile Auto Body & Repair Service</p>
+            <a href="contact.html" class="cta_btn">Contact Us</a>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Mobile Automotive Services</h2>
+            <div class="service_item">
+                <a href="services/bodywork.html">Bodywork</a>
+            </div>
+            <div class="service_item">
+                <a href="services/engine.html">Engine Repair/Maintenance</a>
+            </div>
+            <div class="service_item">
+                <a href="services/fabrication.html">Custom Fabrication</a>
+            </div>
+            <div class="service_item">
+                <a href="services/services.html">Battery Boosting/Jumpstart Services</a>
+            </div>
+            <div class="service_item">
+                <a href="services/services.html">Tire Changes (On Rim)</a>
+            </div>
+        </section>
+    </div>
+
+    <section class="image_section">
+        <div class="image_container">
+            <img src="local/gallery1.jpg" alt="Image 1">
+            <img src="local/gallery2.jpg" alt="Image 2">
+            <img src="local/gallery3.jpg" alt="Image 3">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About MillerWorkz Ltd.</h2>
+        <p>Serving Hamilton and surrounding areas, MillerWorkz Ltd. is 
+            led by a seasoned diesel/automotive mechanic with years of experience. 
+        We specialize in mobile auto body and repair services, including bodywork, 
+        welding, engine repair, and diagnostics. 
+        Our team brings quality workmanship directly to your location, 
+        whether at home, work, or on the road. 
+        Committed to exceptional customer service, we deliver reliable, 
+        affordable, and high-quality solutions to keep your vehicle in peak 
+        condition with minimal disruption to your schedule.</p>
+    </section>
+
+    <section class="index_images" style="background-color: black;;">
+        <img src="local/banner.jpg" class="blurred_image">
+    </section>
+
+    <h1 style="text-align:center; margin-top: 50px; margin-bottom: -15px; font-size:2rem;">Youtube Highlight</h1>
+
+    <div class="youtube_container">
+        <div class="youtube_responsive">
+            <iframe
+                src="https://www.youtube.com/embed/MeV3zWdEOtI" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>📍 Serving the GTA and Greater Hamilton, Ontario</p>
+        <p>📞 Call us at: <a href="tel:+1234567890">+1 (905) 870-9361</a></p>
+        <p>📧 Email: <a href="mailto:millerworkzltd@outlook.com">millerworkzltd@outlook.com</a></p>
+        <p>🕒 Hours:</p>
+        <ul style="list-style-type:none; padding: 0; margin: 0;">
+            <li>Monday - Friday: 9 a.m. – 7 p.m.</li>
+            <li>Saturday - Sunday: Closed</li>
+        </ul>
+        <div id="social_links_container"></div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 MillerWorkz Ltd. | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
