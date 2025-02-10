@@ -139,7 +139,7 @@
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: black;
+        background-color: #333;
         position: absolute;
         top: 20px;
         left: 0;
@@ -181,7 +181,6 @@
         display: none;
         position: static;
         box-shadow: none;
-        background-color: black;
         border-radius: 4px;
         margin: 15px;
     }
