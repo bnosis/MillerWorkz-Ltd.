@@ -81,6 +81,19 @@
     margin-left: 5px;
 }
 
+.contact_form #photos{
+    color: #000000;
+}
+
+#file_names a {
+    color: white;
+    text-decoration: none;
+}
+
+#file_names a:hover {
+    text-decoration: underline; 
+}
+
 @media screen and (max-width: 768px) {
     .contact_form {
         padding: 15px;
